@@ -1,0 +1,53 @@
+.map-container {
+  padding-right: 17px;
+  padding-top: 32px;
+}
+
+.map {
+  width: 100%;
+}
+.table-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin:24px 0px
+}
+
+.custom-table .ant-table {
+  background: transparent !important;
+}
+
+.custom-table .ant-table-cell {
+  background: transparent;
+}
+
+.custom-table .ant-table-thead {
+  background: rgba(252, 175, 119, 0.02);
+  backdrop-filter: blur(12px);
+}
+.custom-table table tr td:hover {
+  background: transparent !important;
+}
+.custom-table .ant-table-thead tr th {
+  color: #fcaf77;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid transparent !important;
+}
+.custom-table .ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td {
+  color: #fff !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.custom-table .ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: transparent !important;
+}
+.custom-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgba(133, 145, 174, 0.2);
+}

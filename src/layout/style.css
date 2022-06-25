@@ -1,0 +1,131 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 32px 0px;
+  padding-top: 27px;
+  position: fixed;
+}
+.navbar{
+  background-color: transparent !important;
+}
+.navbar button{
+  background-color: transparent !important;
+  border: 1px solid #fcaf77;
+}
+.navbar-logo{
+  margin-left: 22px;
+}
+
+.sidebar-container div ul{
+    width: 86%;
+}
+.sidebar {
+  min-height: 100vh;
+  margin-right: 24px;
+}
+.ant-layout-sider {
+  background-color: transparent !important;
+  box-shadow: 3px 0px 32px rgba(29, 32, 59, 0.52);
+  border-right: 2px solid rgba(252, 175, 119, 0.16);
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: 1px solid transparent !important ;
+}
+
+.navbar {
+  background-color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: none;
+}
+.user-auth {
+  padding-left: 26px;
+}
+.sidebar-logo-container{
+    margin-bottom: 50px !important;
+}
+.sidebar-logo {
+  width: 95%;
+  margin-left: 0px;
+}
+.sidebar-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #c5c5c5 !important;
+}
+.sidebar-link:hover {
+  color: #c5c5c5 !important;
+}
+.logo {
+  height: 32px;
+  margin-left: 1rem;
+}
+.ant-menu {
+  background: transparent !important;
+}
+
+.ant-menu-item.active {
+  background: linear-gradient(
+    270deg,
+    rgba(252, 175, 119, 0.07) 0%,
+    rgba(252, 175, 119, 0) 100%
+  );
+  border-right: 3px solid #fcaf77;
+  position: relative;
+}
+.ant-menu-item.active::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  background: #fcaf77;
+  transform: rotate(45deg);
+}
+
+.ant-drawer-content , .ant-drawer-header{
+  background: #141010 !important;
+}
+.ant-drawer-header button{
+  color: #ffffff !important;
+}
+.ant-drawer-body{
+  padding-right: 5px !important;
+}
+.custom-table .ant-table-wrapper{
+  width: 100%;
+  overflow: auto;
+}
+/* ========== MEDIA QUERY ============== */
+
+@media (min-width: 992px) {
+    .menu {
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    .sidebar-container{
+        position: relative;
+    }
+    .navbar {
+      display: block;
+    }
+    .ant-menu-item.active::before{
+        display: none;
+    }
+    .sidebar-container div ul{
+        width: 100%;
+      }
+    .sidebar-container div ul li:nth-child(1){
+      display: none !important;
+    }
+    /* #141010 */
+  }
+
